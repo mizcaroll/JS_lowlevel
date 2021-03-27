@@ -1,7 +1,20 @@
-//using bracket notation to find the nth to last character of a string based on its length
+//modifying values in arrays
+var myArray = [11,20,77];
+myArray[1] = 22; //changes the value of index 1 in myArray to 22.
+console.log(myArray);
+
+/* //string concatenation exercise using a function
+function wordPlay(myNoun, myAdjective, myVerb, myAdverb) {
+var result = "";
+result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb + ".";
+return result;
+}
+console.log(wordPlay("dog", "big", "ran", "quickly")); */
+
+/* //using bracket notation to find the nth to last character of a string based on its length
 var newName = "Mbithe";
 var nthCharacter = newName[newName.length - 3]; //translates to newName[3] i.e 't'
-console.log(nthCharacter);
+console.log(nthCharacter); */
 
 /* //using bracket notation to find the last character of a string based on its length
 
