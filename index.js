@@ -1,8 +1,23 @@
-//modifying values in arrays
+//removing the last element of an array with pop function
+var myArray = [["John", 23], ["cat", 2]];
+myArray.pop;
+console.log(myArray);
+
+/* //adding elements into arrays with push function
+var myArray = [["John", 23], ["cat", 2]];
+myArray.push(["Peter", 65]);
+console.log(myArray); */
+
+/* //multidimensional arrays
+var myArray = [[1,2,3], [4,5,6,], [7,8,9,], [[10,11,12], 13, 14]];
+var myData = myArray[2][1]; //would display the value 8 from myArray.
+console.log(myArray[2][1]) */
+
+/* //modifying values in arrays
 var myArray = [11,20,77];
 myArray[1] = 22; //changes the value of index 1 in myArray to 22.
 console.log(myArray);
-
+ */
 /* //string concatenation exercise using a function
 function wordPlay(myNoun, myAdjective, myVerb, myAdverb) {
 var result = "";
