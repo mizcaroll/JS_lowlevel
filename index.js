@@ -1,11 +1,24 @@
-//removing the last element of an array with pop function
-var myArray = [["John", 23], ["cat", 2]];
-myArray.pop;
+//adding an element to the beginning of an array with unshift function
+
+var myArray = [["John", 23], ["cat", 2], ["Peter", 65]];
+myArray.shift(); 
+myArray.unshift(["Mbithe",30])
 console.log(myArray);
 
+/* //removing the FIRST element of an array with the shift function
+var myArray = [["John", 23], ["cat", 2], ["Peter", 65]];
+var removedElement = myArray.shift(); //stores removed element in new variable 'removedElement'.
+console.log(myArray);
+console.log(removedElement); */
+
+/* //removing the last element of an array with pop function
+var myArray = [["John", 23], ["cat", 2], ["Peter", 65]];
+myArray.pop(); //pop removes the final element of an array
+console.log(myArray);
+ */
 /* //adding elements into arrays with push function
 var myArray = [["John", 23], ["cat", 2]];
-myArray.push(["Peter", 65]);
+myArray.push(["Peter", 65]); //push adds elements to the end of an array
 console.log(myArray); */
 
 /* //multidimensional arrays
