@@ -1,7 +1,7 @@
 //using bracket notation to find the nth to last character of a string based on its length
 var newName = "Mbithe";
-var lastCharacter = newName[newName.length - 3]; //translates to newName[3] i.e 't'
-console.log(lastCharacter);
+var nthCharacter = newName[newName.length - 3]; //translates to newName[3] i.e 't'
+console.log(nthCharacter);
 
 /* //using bracket notation to find the last character of a string based on its length
 
