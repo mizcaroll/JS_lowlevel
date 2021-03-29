@@ -1,14 +1,25 @@
-//equality operators within if statements
-
+//inequality operators
 
 function testEquality(val) {
+  if (val != 99) {
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+console.log(testEquality(45));
+//NB. this is the strict inequality operator !==
+
+//equality operators within if statements
+
+/* function testEquality(val) {
   if (val == 12) {
     return "Equal";
   }
   return "Not equal";
 }
 
-console.log(testEquality(10));
+console.log(testEquality(10)); */
 //NB. the strict equal sign (===) evaluates to true only if both operands are of the same type and contain the same value. 
 
 /* //if conditional statements
