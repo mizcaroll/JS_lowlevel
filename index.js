@@ -1,4 +1,15 @@
-//assigning a returned value to a variable
+/* //simulating the order of items in a queue using arrays
+function nextInLine(arr, item) {
+  arr.push(item); //adds new item at the end of the array
+  return arr.shift(); //removes the first element of the array
+
+}
+var testArr = [1,2,3,4,5];
+console.log("Before: " + JSON.stringify(testArr)); //outputs Before: [1,2,3,4,5]
+console.log(nextInLine(testArr, 6)); //outputs 1
+console.log("After: " + JSON.stringify(testArr)); //outputs After: [2,3,4,5,6] */
+
+/* //assigning a returned value to a variable
 var changed = 0;
  function change(num) {
    return (num + 5) / 3;
@@ -13,7 +24,7 @@ function processArg(num) {
 }
 processed = processArg(10);
 
-console.log(processed);
+console.log(processed); */
 
 /* //return a value from a function with return statement
 
