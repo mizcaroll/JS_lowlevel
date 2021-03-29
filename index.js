@@ -7,8 +7,9 @@ function testEquality(val) {
   return "Equal";
 }
 
-console.log(testEquality(45));
-//NB. this is the strict inequality operator !==
+console.log(testEquality("99")); //actually returns 'Equal' since != converts types
+
+//NB. The strict inequality operator !== DOES NOT covert types so it would return 'Not Equal' in the above example.
 
 //equality operators within if statements
 
