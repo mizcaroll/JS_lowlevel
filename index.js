@@ -1,4 +1,17 @@
-//if conditional statements
+//equality operators within if statements
+
+
+function testEquality(val) {
+  if (val == 12) {
+    return "Equal";
+  }
+  return "Not equal";
+}
+
+console.log(testEquality(10));
+//NB. the strict equal sign (===) evaluates to true only if both operands are of the same type and contain the same value. 
+
+/* //if conditional statements
 
 function trueOrFalse(wasThatTrue) {
   if (wasThatTrue) { //executes if condition is true
@@ -6,7 +19,7 @@ return "Yes, that was totally true..";
   }
   return "Nope, not true. Complete bs"; //executes if condition is false
 }
-console.log(trueOrFalse(true));
+console.log(trueOrFalse(true)); */
 
 /* //simulating the order of items in a queue using arrays
 function nextInLine(arr, item) {
