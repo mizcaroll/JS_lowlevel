@@ -1,3 +1,13 @@
+//if conditional statements
+
+function trueOrFalse(wasThatTrue) {
+  if (wasThatTrue) { //executes if condition is true
+return "Yes, that was totally true..";
+  }
+  return "Nope, not true. Complete bs"; //executes if condition is false
+}
+console.log(trueOrFalse(true));
+
 /* //simulating the order of items in a queue using arrays
 function nextInLine(arr, item) {
   arr.push(item); //adds new item at the end of the array
