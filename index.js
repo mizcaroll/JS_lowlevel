@@ -1,8 +1,20 @@
-//function parameters
+/* //local scope and functions
+function myLocalScope() {
+  var myVar = 5;
+  console.log(myVar); //would output 5 on the console
+}
+myLocalScope();
+
+console.log(myVar); //would output an error: myVar is not defined. cos the program tried to access myVar outside the function */
+
+//NB. global scope variables can be declared outside functions, or within functions but without the var keyword
+
+/* //function parameters
 function newFunction(a, b) {
 console.log(a - b);
 }
-newFunction(10, 3);
+newFunction(10, 3); //outputs 7 on the console
+ */
 /* //functions
 function newFunction() {
   console.log("Hello there world!");
