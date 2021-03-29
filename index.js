@@ -1,5 +1,29 @@
-//inequality operators
+//Logical And operator
+function testLogicalAnd(val) {
+  if (val <= 50 && val>= 25) { //here, BOTH conditions MUST be true to satisfy the statement
+    return "Yes";
+  }
+  return "No";
+}
+console.log(testLogicalAnd(10)); //outputs No
 
+//NB. Logical OR operator || works as you'd imagine. (EITHER conditions could be true to satisfy the statement)
+
+/* //greater than or equal to operator
+//NB. greater than >, less than <, less than or equal to <= also work the same as you'd imagine.
+
+function moreOrEqual(val) {
+  if(val >= 100) {
+    return "100 or over";
+  }
+  if (val >= 10) {
+    return "10 or over";
+  }
+  return "less than 10";
+}
+console.log(moreOrEqual(5)); */
+
+/* //inequality operators
 function testEquality(val) {
   if (val != 99) {
     return "Not Equal";
@@ -7,7 +31,7 @@ function testEquality(val) {
   return "Equal";
 }
 
-console.log(testEquality("99")); //actually returns 'Equal' since != converts types
+console.log(testEquality("99")); //actually returns 'Equal' since != converts types */
 
 //NB. The strict inequality operator !== DOES NOT covert types so it would return 'Not Equal' in the above example.
 
