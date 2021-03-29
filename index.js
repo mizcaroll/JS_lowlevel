@@ -1,3 +1,18 @@
+//global vs. local scope in functions
+//we can have local and global variable sharing the same name. In this scenario, the local variable takes precedence over the global variable. e.g below
+
+var outerWear = "T-shirt";
+
+function myOutfit() {
+  var outerWear = "sweater";
+  return outerWear;
+}
+
+console.log(myOutfit());  //ouputs sweater on the console, and not T-shirt, cos we have called the myOutfit() function so the local variable takes precedence over the global one. However..
+
+console.log(outerWear);//will output T-shirt. i.e. the value of the global variable since we didn't call the function.
+
+
 /* //local scope and functions
 function myLocalScope() {
   var myVar = 5;
