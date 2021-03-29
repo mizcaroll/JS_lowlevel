@@ -1,9 +1,26 @@
-//return a value from a function with return statement
+//assigning a returned value to a variable
+var changed = 0;
+ function change(num) {
+   return (num + 5) / 3;
+ }
+changed = change(10);
+
+console.log(changed);
+
+var processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed = processArg(10);
+
+console.log(processed);
+
+/* //return a value from a function with return statement
 
 function minusSeven(num) {
   return num - 7;
 }
-console.log(minusSeven(10)); //outputs 3 on the console cos the function returns 3
+console.log(minusSeven(10)); //outputs 3 on the console cos the function returns 3 */
 
 /* //global vs. local scope in functions
 //we can have local and global variable sharing the same name. In this scenario, the local variable takes precedence over the global variable. e.g below
