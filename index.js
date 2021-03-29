@@ -1,10 +1,22 @@
-//adding an element to the beginning of an array with unshift function
+//function parameters
+function newFunction(a, b) {
+console.log(a - b);
+}
+newFunction(10, 3);
+/* //functions
+function newFunction() {
+  console.log("Hello there world!");
+}
+
+newFunction();
+ */
+/* //adding an element to the beginning of an array with unshift function
 
 var myArray = [["John", 23], ["cat", 2], ["Peter", 65]];
 myArray.shift(); 
 myArray.unshift(["Mbithe",30])
 console.log(myArray);
-
+ */
 /* //removing the FIRST element of an array with the shift function
 var myArray = [["John", 23], ["cat", 2], ["Peter", 65]];
 var removedElement = myArray.shift(); //stores removed element in new variable 'removedElement'.
