@@ -1,11 +1,36 @@
-//Logical And operator
+//odering if statements. NB. if the first if statement is met, the program will not check the other statements. E.g the correct order is as follows
+
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }  
+}
+console.log(orderMyLogic(3)); //outputs less than 5 of course.
+
+//else if and else statements
+/* function testing(val) {
+  if(val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+    return "Between 5 and 10";
+  }  
+}
+console.log(testing(3)); */
+
+/* //Logical And operator
 function testLogicalAnd(val) {
   if (val <= 50 && val>= 25) { //here, BOTH conditions MUST be true to satisfy the statement
     return "Yes";
   }
   return "No";
 }
-console.log(testLogicalAnd(10)); //outputs No
+console.log(testLogicalAnd(10)); //outputs No */
 
 //NB. Logical OR operator || works as you'd imagine. (EITHER conditions could be true to satisfy the statement)
 
