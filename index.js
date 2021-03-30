@@ -1,4 +1,15 @@
-//Bracket notation is another alternative to accessing objects. However, its use is REQUIRED when property names have spaces in them. e.g.
+//accessing objects through variables
+var objCounties = {
+  1: "Mombasa",
+  16: "Machakos",
+  47: "Nairobi"
+}
+
+var Joho = 1;
+var sandyBeaches = objCounties[Joho]; 
+console.log(sandyBeaches); //Mombasa
+
+/* //Bracket notation is another alternative to accessing objects. However, its use is REQUIRED when property names have spaces in them. e.g.
 
 var testObj = {
   "main course": "burger",
@@ -16,7 +27,7 @@ var testObj = {
   "partners": []
 };
 var hatValue = testObj.hat;
-var blouseValue = testObj.blouse;
+var blouseValue = testObj.blouse; */
 
 /* //JS objects. contain properties and values
 var myDog = {
