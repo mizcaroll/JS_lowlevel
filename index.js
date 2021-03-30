@@ -1,4 +1,14 @@
-//Returning boolean values from if statements
+//returning early from a function.
+function abTest(a, b) {
+  if (a < 0 || b < 0) {
+    return undefined;
+  }
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+console.log(abTest(-1, 2)); //undefined
+
+/* //Returning boolean values from if statements
 //note the following
 
 function isLess(a, b) {
@@ -14,9 +24,9 @@ console.log(isLess(10,15)); //true
 //In comp science logic, all comparison operators return a true or false value. So the above statement can/should be written simply as
 
 function isLess(a, b) {
-  return (a < b);
+  return a < b;
   }
-  console.log(isLess(10,15)); //true
+  console.log(isLess(10,15)); //true */
 
 /* //identical options in switch statements. used when you want different cases to have the same result.
 function testingSizes(val) {
