@@ -1,4 +1,32 @@
-//Adding new properties to an object using dot notation and bracket notation
+//using objects for lookups e.g. using the switch statement from before
+
+function myAbcs(val) {
+  var result = "";
+  var lookup = {
+    "a": "apple",
+    "b": "bird",
+    "c": "cat",
+    "d": "dundaing",
+    "f": "furahiday"
+  };
+  result = lookup[val];
+  return result;
+}
+  console.log(myAbcs("d"));
+
+/* //Deleting properties from an object with the delete keyword
+var testObj = {
+  "hat": "Wide-brim",
+  "blouse": "chiffon",
+  "shoes": "heels",
+  "pants": "jeans", 
+  "watch": "Cartier"
+}
+
+delete testObj.hat; 
+console.log(testObj); //outputs {blouse: "chiffon", shoes: "heels", pants: "jeans", watch: "Cartier"} */
+
+/* //Adding new properties to an object using dot notation and bracket notation
 var testObj = {
   "hat": "Wide-brim",
   "blouse": "chiffon",
@@ -9,7 +37,7 @@ testObj.pants = "jeans";
 console.log(testObj); //outputs {hat: "Wide-brim", blouse: "chiffon", shoes: "heels", pants: "jeans"} 
 
 testObj["watch"] = "Cartier";
-console.log(testObj); //outputs {hat: "Wide-brim", blouse: "chiffon", shoes: "heels", pants: "jeans", watch: "Cartier"}
+console.log(testObj); //outputs {hat: "Wide-brim", blouse: "chiffon", shoes: "heels", pants: "jeans", watch: "Cartier"} */
 
 /* //we can update object properties using dot notation and the assignment operator
 var testObj = {
