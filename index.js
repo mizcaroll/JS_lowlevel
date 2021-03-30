@@ -1,4 +1,28 @@
-//accessing objects through variables
+//Adding new properties to an object using dot notation and bracket notation
+var testObj = {
+  "hat": "Wide-brim",
+  "blouse": "chiffon",
+  "shoes": "heels",
+};
+
+testObj.pants = "jeans";
+console.log(testObj); //outputs {hat: "Wide-brim", blouse: "chiffon", shoes: "heels", pants: "jeans"} 
+
+testObj["watch"] = "Cartier";
+console.log(testObj); //outputs {hat: "Wide-brim", blouse: "chiffon", shoes: "heels", pants: "jeans", watch: "Cartier"}
+
+/* //we can update object properties using dot notation and the assignment operator
+var testObj = {
+  "hat": "Wide-brim",
+  "blouse": "chiffon",
+  "shoes": "heels",
+};
+
+testObj.blouse = "cotton";
+
+console.log(testObj); //shows updated object i.e. {hat: "Wide-brim", blouse: "cotton", shoes: "heels"} */
+
+/* //accessing objects through variables
 var objCounties = {
   1: "Mombasa",
   16: "Machakos",
@@ -7,7 +31,7 @@ var objCounties = {
 
 var Joho = 1;
 var sandyBeaches = objCounties[Joho]; 
-console.log(sandyBeaches); //Mombasa
+console.log(sandyBeaches); //Mombasa */
 
 /* //Bracket notation is another alternative to accessing objects. However, its use is REQUIRED when property names have spaces in them. e.g.
 
