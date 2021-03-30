@@ -1,4 +1,21 @@
-//checking objects for properties
+//accessing nested objects
+var myStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+var topSecretInfo = myStorage.cabinet["top drawer"].folder2;
+
+console.log(topSecretInfo);
+
+/* //checking objects for properties
 var ooTd = {
   hat: "Wide-brim",
   blouse: "chiffon",
@@ -13,9 +30,9 @@ function checkObj(checkProp) {
     return "Not Found";
   }
 }
-console.log(checkObj("pants")); //jeans
+console.log(checkObj("hello")); //jeans
 
-console.log(ooTd["shoes"]);//heels. i'm noticing properties called using bracket notation have to be in quotes
+console.log(ooTd["shoes"]);//heels. i'm noticing properties called using bracket notation have to be in quotes */
 
 /* //using objects for lookups e.g. using the switch statement from before
 
