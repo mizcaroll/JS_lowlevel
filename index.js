@@ -1,4 +1,24 @@
-//identical options in switch statements. used when you want different cases to have the same result.
+//Returning boolean values from if statements
+//note the following
+
+function isLess(a, b) {
+if (a < b) {
+  return true;
+}
+else {
+  return false;
+}
+}
+console.log(isLess(10,15)); //true
+
+//In comp science logic, all comparison operators return a true or false value. So the above statement can/should be written simply as
+
+function isLess(a, b) {
+  return (a < b);
+  }
+  console.log(isLess(10,15)); //true
+
+/* //identical options in switch statements. used when you want different cases to have the same result.
 function testingSizes(val) {
   var answer = "";
   switch(val) {
@@ -20,7 +40,7 @@ function testingSizes(val) {
   }
   return answer;
 }
-  console.log(testingSizes(7));
+  console.log(testingSizes(7)); //logs High */
 
 /* //default option in switch statements
 function takeTwoSwitch(val) {
