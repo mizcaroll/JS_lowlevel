@@ -1,4 +1,18 @@
-//accessing nested objects
+//accessing nested arrays
+var myPlants = [
+  {//object inside an array
+    type: "flowers",
+    list: ["rose", "tulip", "dandelion"]
+  },
+  {
+    type: "trees",
+    list: ["fir", "pine", "birch"]
+  }
+];
+var thirdTree = myPlants[1].list[2];
+console.log(thirdTree); //birch
+
+/* //accessing nested objects
 var myStorage = {
   "desk": {
     "drawer": "stapler"
@@ -13,7 +27,7 @@ var myStorage = {
 };
 var topSecretInfo = myStorage.cabinet["top drawer"].folder2;
 
-console.log(topSecretInfo);
+console.log(topSecretInfo); //secrets */
 
 /* //checking objects for properties
 var ooTd = {
