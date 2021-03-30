@@ -1,4 +1,27 @@
-//switch statements
+//default option in switch statements
+function takeTwoSwitch(val) {
+  var answer = "";
+  switch(val) {
+    case "a":
+      answer = "apple";
+      break;
+    case "b":
+      answer = "bird";
+      break;
+    case "c":
+      answer = "cat";
+      break;
+    case "d":
+      answer = "dog";
+      break;
+    default:
+      answer = "etcetc"
+  }
+  return answer;
+}
+  console.log(takeTwoSwitch("f")); //outputs etcetc on console by default since we don"t have a that case in our switch statements
+
+/* //switch statements
 function caseInSwitch(val) {
   var answer = "";
   switch(val) {
@@ -17,7 +40,7 @@ function caseInSwitch(val) {
   }
   return answer;
 }
-  console.log(caseInSwitch(4)); //outputs delta on console
+  console.log(caseInSwitch(4)); //outputs delta on console */
 
 /* //correct odering of if statements is very important. NB. if the first if statement condition is met, the program will not check the other statements. E.g the correct order is as follows
 
