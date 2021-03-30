@@ -1,4 +1,23 @@
-//using objects for lookups e.g. using the switch statement from before
+//checking objects for properties
+var ooTd = {
+  hat: "Wide-brim",
+  blouse: "chiffon",
+  shoes: "heels",
+  pants: "jeans", 
+  watch: "Cartier"
+};
+function checkObj(checkProp) {
+  if (ooTd.hasOwnProperty(checkProp)) { //true or false 
+    return ooTd[checkProp]; //returns the value of the found property
+  } else {
+    return "Not Found";
+  }
+}
+console.log(checkObj("pants")); //jeans
+
+console.log(ooTd["shoes"]);//heels. i'm noticing properties called using bracket notation have to be in quotes
+
+/* //using objects for lookups e.g. using the switch statement from before
 
 function myAbcs(val) {
   var result = "";
@@ -12,7 +31,7 @@ function myAbcs(val) {
   result = lookup[val];
   return result;
 }
-  console.log(myAbcs("d"));
+  console.log(myAbcs("d")); */
 
 /* //Deleting properties from an object with the delete keyword
 var testObj = {
