@@ -1,4 +1,25 @@
-//odering if statements. NB. if the first if statement is met, the program will not check the other statements. E.g the correct order is as follows
+//switch statements
+function caseInSwitch(val) {
+  var answer = "";
+  switch(val) {
+    case 1:
+      answer = "alpha";
+      break;
+    case 2:
+      answer = "beta";
+      break;
+    case 3:
+      answer = "gamma";
+      break;
+    case 4:
+      answer = "delta";
+      break;
+  }
+  return answer;
+}
+  console.log(caseInSwitch(4)); //outputs delta on console
+
+/* //correct odering of if statements is very important. NB. if the first if statement condition is met, the program will not check the other statements. E.g the correct order is as follows
 
 function orderMyLogic(val) {
   if (val < 5) {
@@ -10,7 +31,7 @@ function orderMyLogic(val) {
   }  
 }
 console.log(orderMyLogic(3)); //outputs less than 5 of course.
-
+ */
 //else if and else statements
 /* function testing(val) {
   if(val > 10) {
