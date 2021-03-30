@@ -1,4 +1,32 @@
-//returning early from a function.
+//Bracket notation is another alternative to accessing objects. However, its use is REQUIRED when property names have spaces in them. e.g.
+
+var testObj = {
+  "main course": "burger",
+  "side dish": "fries",
+  "the drink": "water"
+};
+var mainDish = testObj["main course"];
+var sideDish = testObj["side dish"];
+
+//Accessing objects with dot notation
+var testObj = {
+  "hat": "Wide-brim",
+  "blouse": "chiffon",
+  "shoes": "heels",
+  "partners": []
+};
+var hatValue = testObj.hat;
+var blouseValue = testObj.blouse;
+
+/* //JS objects. contain properties and values
+var myDog = {
+  "name": "Jenny",
+  "legs": 4,
+  "tails": 1,
+  "partners": []
+}; */
+
+/* //returning early from a function.
 function abTest(a, b) {
   if (a < 0 || b < 0) {
     return undefined;
@@ -6,7 +34,7 @@ function abTest(a, b) {
   return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 }
 
-console.log(abTest(-1, 2)); //undefined
+console.log(abTest(-1, 2)); //undefined */
 
 /* //Returning boolean values from if statements
 //note the following
