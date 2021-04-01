@@ -1,19 +1,28 @@
-//Generating random whole numbers using Math.floor function
+//generating random whole numbers within a range
+//Create a function called randomRange that takes a range myMin and myMax and returns a random whole number that's greater than or equal to myMin, and is less than or equal to myMax, inclusive.
+
+  function randomRange(myMin, myMax) {
+    return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+  }
+var myRandom = randomRange(5, 15);
+console.log(myRandom); //success!
+
+/* //Generating random whole numbers using Math.floor function
 function randomWholeNum() {
 
   return Math.floor(Math.random() * 10); //this expression will return a random number btwn 0 and 9. 
 }
 console.log(randomWholeNum());
 
-//similarly, Math.floor(Math.random() * 20) would give a random number btwn 0 and 19.
+//similarly, Math.floor(Math.random() * 20) would give a random number btwn 0 and 19. */
 
-//Generating random decimal numbers/fractions using Math.random function
+/* //Generating random decimal numbers/fractions using Math.random function
 function randomFraction() {
 
   return Math.random(); 
 }
 console.log(randomFraction());
-//Math.random will always return a number between 0 and 1. it could be zero but never 1.
+//Math.random will always return a number between 0 and 1. it could be zero but never 1. */
 
 //profile lookup challenge
 
