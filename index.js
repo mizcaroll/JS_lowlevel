@@ -1,4 +1,17 @@
-// using nested for loops to access nested arrays
+//A do while loop will run the code AT LEAST ONCE and then check the condition. is how its diffrent from a while loop.
+//iterating with do while loop
+
+var myArray = [];
+var i = 10;
+do {
+  myArray.push(i);
+  i++;
+} while (i < 5)
+
+console.log(i, myArray); // outputs 11 [10] successfully. even though i is not less than 5 cos do while loop executes at least once.
+
+
+/* // using nested for loops to access nested arrays
 //in this example we will create a function to mutiply all the numbers/elements in the nested array
 
 function multiplyAll(arr) {
@@ -14,7 +27,7 @@ function multiplyAll(arr) {
 }
 
 var product = multiplyAll([[1,2],[3,4],[5,6,7]]);
-console.log(product); //5040 success!
+console.log(product); //5040 success! */
 
 
 /* //iterate through an array with for loop
