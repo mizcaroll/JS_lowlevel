@@ -1,12 +1,27 @@
-//iterating ODD numbers with a for loop. Hint - initialise i to 1 then increment by 2.
+//counting backwards with a for loop. e.g decrement by 2. Initialise with 10 for even numbers.
+var myArray = [];
+
+for (var i = 10; i > 0; i -= 2) {
+  myArray.push(i);
+}
+console.log(myArray); // (5) [10, 8, 6, 4, 2]
+
+//counting backwards with a for loop. e.g decrement by 2. Initialise with 9 for odd numbers.
+var myArray = [];
+
+for (var i = 9; i > 0; i -= 2) {
+  myArray.push(i);
+}
+console.log(myArray); // (5) [9, 7, 5, 3, 1]
+
+/* //iterating ODD numbers with a for loop. Hint - initialise i to 1 then increment by 2.
 
 var myArray = [];
 
 for (var i = 1; i < 10; i += 2) {
   myArray.push(i);
 }
-console.log(myArray);
-
+console.log(myArray); */
 
 /* //iterating EVEN numbers with a for loop. Hint - initialise i to 0 then increment by 2.
 
