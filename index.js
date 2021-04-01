@@ -1,4 +1,18 @@
-//parseInt() with Radix. Radix specifies the base of the number in the string e.g. base 2 would be binary. our default is base 10.
+//conditional ternary operator. is like a one-line if-else expression
+//styntax. condition ? statement-if-true : statement-if-false;
+
+function findGreater(a, b) {
+  return a > b ? "a is greater" : "b is greater";
+}
+console.log(findGreater(5, 20)); //b is greater
+
+//ex 2
+function checkEqual(a, b) {
+  return a === b ? true : false;
+}
+console.log(checkEqual(5, 20)); //false
+
+/* //parseInt() with Radix. Radix specifies the base of the number in the string e.g. base 2 would be binary. our default is base 10.
 //syntax parseInt(str, radix)
 //example. convert 10011 (base 2) to integer
 
@@ -6,7 +20,7 @@ function convertToInteger(str) {
   return parseInt(str, 2);
   }
 
-console.log(convertToInteger("10011")); //outputs 19
+console.log(convertToInteger("10011")); //outputs 19 */
 
 /* //using pasreInt() to convert strings to integers
 
