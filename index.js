@@ -1,13 +1,35 @@
-//generating random whole numbers within a range
+//parseInt() with Radix. Radix specifies the base of the number in the string e.g. base 2 would be binary. our default is base 10.
+//syntax parseInt(str, radix)
+//example. convert 10011 (base 2) to integer
+
+function convertToInteger(str) {
+  return parseInt(str, 2);
+  }
+
+console.log(convertToInteger("10011")); //outputs 19
+
+/* //using pasreInt() to convert strings to integers
+
+function convertToInteger(str) {
+
+return parseInt(str);
+}
+ 
+var test = convertToInteger("42"); //outputs 42. didn't work when i tried to pass a literal string 'forty two' smh you wonder. bet i'll find out why badae
+
+console.log(test); */
+
+
+/* //generating random whole numbers within a range
 //Create a function called randomRange that takes a range myMin and myMax and returns a random whole number that's greater than or equal to myMin, and is less than or equal to myMax, inclusive.
 
   function randomRange(myMin, myMax) {
     return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
   }
 var myRandom = randomRange(5, 15);
-console.log(myRandom); //success!
+console.log(myRandom); //success! */
 
-/* //Generating random whole numbers using Math.floor function
+/* //Generating random whole numbers using Math.floor()
 function randomWholeNum() {
 
   return Math.floor(Math.random() * 10); //this expression will return a random number btwn 0 and 9. 
@@ -16,7 +38,7 @@ console.log(randomWholeNum());
 
 //similarly, Math.floor(Math.random() * 20) would give a random number btwn 0 and 19. */
 
-/* //Generating random decimal numbers/fractions using Math.random function
+/* //Generating random decimal numbers/fractions using Math.random()
 function randomFraction() {
 
   return Math.random(); 
