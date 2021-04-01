@@ -1,4 +1,23 @@
-//iterate through an array with for loop
+// using nested for loops to access nested arrays
+//in this example we will create a function to mutiply all the numbers/elements in the nested array
+
+function multiplyAll(arr) {
+  var product = 1;
+
+  for (var i=0; i < arr.length; i++) {
+    for (var j =0; j < arr[i].length; j++) {
+      product *= arr[i][j];
+    }
+  }
+
+  return product;
+}
+
+var product = multiplyAll([[1,2],[3,4],[5,6,7]]);
+console.log(product); //5040 success!
+
+
+/* //iterate through an array with for loop
 //Use a for loop to add the value of each element of the myArr array to total.
 var myArr = [2, 3, 4, 5, 6];
 var total = 0;
@@ -6,7 +25,7 @@ var total = 0;
 for (var i = 0; i < myArr.length; i++) {
   total += myArr[i]; 
 }
-console.log(total); //20 success!
+console.log(total); //20 success! */
 
 /* //counting backwards with a for loop. e.g decrement by 2. Initialise with 10 for even numbers.
 var myArray = [];
