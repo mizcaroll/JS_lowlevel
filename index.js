@@ -1,4 +1,14 @@
-//counting backwards with a for loop. e.g decrement by 2. Initialise with 10 for even numbers.
+//iterate through an array with for loop
+//Use a for loop to add the value of each element of the myArr array to total.
+var myArr = [2, 3, 4, 5, 6];
+var total = 0;
+
+for (var i = 0; i < myArr.length; i++) {
+  total += myArr[i]; 
+}
+console.log(total); //20 success!
+
+/* //counting backwards with a for loop. e.g decrement by 2. Initialise with 10 for even numbers.
 var myArray = [];
 
 for (var i = 10; i > 0; i -= 2) {
@@ -12,7 +22,7 @@ var myArray = [];
 for (var i = 9; i > 0; i -= 2) {
   myArray.push(i);
 }
-console.log(myArray); // (5) [9, 7, 5, 3, 1]
+console.log(myArray); // (5) [9, 7, 5, 3, 1] */
 
 /* //iterating ODD numbers with a for loop. Hint - initialise i to 1 then increment by 2.
 
