@@ -1,3 +1,4 @@
+//"use strict" line in javascript either globally or inside a function tells JS to create errors if you don't strictly specify either var, let or const while declaring a variable
 
 //nested conditional ternary operator
 //write a function that checks whether a number is positive, negative or 0.
