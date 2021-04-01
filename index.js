@@ -1,3 +1,21 @@
+//for lop. most common in JS. initialise, condition, final expression - increment
+var myArray = [];
+for (var i = 1; i < 6; i++) {
+  myArray.push(i);
+}
+console.log(myArray); //[1, 2, 3, 4, 5] success!
+
+/* //iterate with loops
+//while loop. runs while a specified condition is true, stops once its not. e.g populate an array with integers 0-4.
+
+var myArrray =[];
+i = 0;
+while(i < 5) {
+  myArrray.push(i);
+  i++;
+}
+console.log(myArrray);
+ */
 //update record collection exercise
 
 /* You are given a JSON object representing a part of your musical album collection. Each album has a unique id number as its key and several other properties. Not all albums have complete information.
@@ -10,7 +28,7 @@ If prop is tracks and value isn't an empty string, add value to the end of the a
 If value is an empty string, delete the given prop property from the album.
 Note: A copy of the collection object is used for the tests. */
 
-var collection = {
+/* var collection = {
   2548: {
     albumTitle: 'Slippery When Wet',
     artist: 'Bon Jovi',
@@ -51,7 +69,7 @@ console.log(updateRecords(5439, 'artist', 'ABBA'));
 console.log(updateRecords(2468, 'tracks', 'free'));
 console.log(updateRecords(2548, 'artist', 'Bon Jovi'));
 console.log(updateRecords(1245, 'tracks', 'Addicted to love'));
-//success!
+//success! */
 
 
 /* //accessing nested arrays
