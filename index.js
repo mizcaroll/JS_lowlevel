@@ -1,3 +1,20 @@
+//Generating random whole numbers using Math.floor function
+function randomWholeNum() {
+
+  return Math.floor(Math.random() * 10); //this expression will return a random number btwn 0 and 9. 
+}
+console.log(randomWholeNum());
+
+//similarly, Math.floor(Math.random() * 20) would give a random number btwn 0 and 19.
+
+//Generating random decimal numbers/fractions using Math.random function
+function randomFraction() {
+
+  return Math.random(); 
+}
+console.log(randomFraction());
+//Math.random will always return a number between 0 and 1. it could be zero but never 1.
+
 //profile lookup challenge
 
 /* We have an array of objects representing different people in our contacts lists.
@@ -12,7 +29,7 @@ If name does not correspond to any contacts then return the string No such conta
 
 If prop does not correspond to any valid properties of a contact found to match name then return the string No such property. */
 
-var contacts = [
+/* var contacts = [
   {
       "firstName": "Akira",
       "lastName": "Laine",
@@ -53,7 +70,7 @@ var data = lookUpProfile("Harry", "likes");
 var next = lookUpProfile("Sherlock", "stories");
 
 console.log(data);// (3)["Hogwarts", "Magic", "Hagrid"]
-console.log(next); //No such property
+console.log(next); //No such property */
 
 /* //A do while loop will run the code AT LEAST ONCE and then check the condition. is how its diffrent from a while loop.
 //iterating with do while loop
