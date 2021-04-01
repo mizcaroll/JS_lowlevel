@@ -1,12 +1,21 @@
-//iterating even numbers with a for loop. Hint - initialise i to 0 then increment by 2.
+//iterating ODD numbers with a for loop. Hint - initialise i to 1 then increment by 2.
+
+var myArray = [];
+
+for (var i = 1; i < 10; i += 2) {
+  myArray.push(i);
+}
+console.log(myArray);
+
+
+/* //iterating EVEN numbers with a for loop. Hint - initialise i to 0 then increment by 2.
 
 var myArray = [];
 
 for (var i = 0; i < 10; i += 2) {
   myArray.push(i);
 }
-console.log(myArray);
-
+console.log(myArray); */
 
 /* //for lop. most common in JS. initialise, condition, final expression - increment
 var myArray = [];
