@@ -1,9 +1,19 @@
-//for lop. most common in JS. initialise, condition, final expression - increment
+//iterating even numbers with a for loop. Hint - initialise i to 0 then increment by 2.
+
+var myArray = [];
+
+for (var i = 0; i < 10; i += 2) {
+  myArray.push(i);
+}
+console.log(myArray);
+
+
+/* //for lop. most common in JS. initialise, condition, final expression - increment
 var myArray = [];
 for (var i = 1; i < 6; i++) {
   myArray.push(i);
 }
-console.log(myArray); //[1, 2, 3, 4, 5] success!
+console.log(myArray); //[1, 2, 3, 4, 5] success! */
 
 /* //iterate with loops
 //while loop. runs while a specified condition is true, stops once its not. e.g populate an array with integers 0-4.
