@@ -1,4 +1,13 @@
-//conditional ternary operator. is like a one-line if-else expression
+
+//nested conditional ternary operator
+//write a function that checks whether a number is positive, negative or 0.
+
+function checkSign(num) {
+  return num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero";
+}
+console.log(checkSign(-7)); 
+
+/* //conditional ternary operator. is like a one-line if-else expression
 //styntax. condition ? statement-if-true : statement-if-false;
 
 function findGreater(a, b) {
@@ -10,7 +19,7 @@ console.log(findGreater(5, 20)); //b is greater
 function checkEqual(a, b) {
   return a === b ? true : false;
 }
-console.log(checkEqual(5, 20)); //false
+console.log(checkEqual(5, 20)); //false */
 
 /* //parseInt() with Radix. Radix specifies the base of the number in the string e.g. base 2 would be binary. our default is base 10.
 //syntax parseInt(str, radix)
