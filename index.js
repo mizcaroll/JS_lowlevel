@@ -1,4 +1,25 @@
-//re-assigning elements of an array declared with const
+//preventing object mutation using Object.freeze()
+function freezeObj() {
+  "use strict"
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+
+Object.freeze(MATH_CONSTANTS);
+
+  try {
+MATH_CONSTANTS.PI = 99;
+  }
+  catch( ex ) {
+console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+
+const PI = freezeObj(); //ouputs TypeError: Cannot assign to read only property 'PI' of object '#<Object>' at freezeObj
+
+
+/* //re-assigning elements of an array declared with const. a.k.a mutating an array declared with const
 
 const arr = [5,4,3];
 
@@ -7,8 +28,7 @@ arr[0] = 7;
 arr[1] = 8;
 arr[2] = 9; 
 
-console.log(arr); //success!
-
+console.log(arr); //success! */
 
 //"use strict"; line in javascript either globally or inside a function helps you catch coding mistakes. it will return errors if you don't strictly specify either var, let or const when declaring a variable.
 
