@@ -1,4 +1,20 @@
-//preventing object mutation using Object.freeze()
+//use arrow functions to write anonymous functions
+var today = function() {
+  return new Date();
+}
+console.log(today);
+
+//e.g the anonymous function above could be written as an arrow function like this
+
+const watevs = () => new Date();
+
+console.log(watevs); // NB this tutorial's code did not give the current date on console. sijui mbona. but the code below from stack overflow did so :P 
+
+let todayy = new Date().toISOString().slice(0, 10)
+
+console.log(todayy)
+
+/* //preventing object mutation using Object.freeze()
 function freezeObj() {
   "use strict"
   const MATH_CONSTANTS = {
@@ -16,8 +32,7 @@ console.log(ex);
   return MATH_CONSTANTS.PI;
 }
 
-const PI = freezeObj(); //ouputs TypeError: Cannot assign to read only property 'PI' of object '#<Object>' at freezeObj
-
+const PI = freezeObj(); //ouputs TypeError: Cannot assign to read only property 'PI' of object '#<Object>' at freezeObj */
 
 /* //re-assigning elements of an array declared with const. a.k.a mutating an array declared with const
 
