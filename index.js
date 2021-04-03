@@ -1,12 +1,24 @@
-//"use strict"; line in javascript either globally or inside a function tells JS to create errors if you don't strictly specify either var, let or const while declaring a variable
+//re-assigning elements of an array declared with const
 
-//nested conditional ternary operator
+const arr = [5,4,3];
+
+// arr = [7,8,9]; will output an error. the correct way is..
+arr[0] = 7;
+arr[1] = 8;
+arr[2] = 9; 
+
+console.log(arr); //success!
+
+
+//"use strict"; line in javascript either globally or inside a function helps you catch coding mistakes. it will return errors if you don't strictly specify either var, let or const when declaring a variable.
+
+/* //nested conditional ternary operator
 //write a function that checks whether a number is positive, negative or 0.
 
 function checkSign(num) {
   return num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero";
 }
-console.log(checkSign(-7)); 
+console.log(checkSign(-7));  */
 
 /* //conditional ternary operator. is like a one-line if-else expression
 //styntax. condition ? statement-if-true : statement-if-false;
