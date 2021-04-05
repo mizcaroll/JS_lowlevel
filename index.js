@@ -1,4 +1,18 @@
-//use arrow functions to write anonymous functions
+ //arrow functions with parameters
+//the below code can be written as an arrow function
+
+var myConcat = function (arr1, arr2) {
+return arr1.concat(arr2);
+}
+console.log(myConcat([1,2], [3,4,5])); // [1, 2, 3, 4, 5]
+
+//now as an arrown function. change var to const for good measure
+
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+console.log(myConcat([1,2], [3,4,5])); //[1, 2, 3, 4, 5]
+
+/* //use arrow functions to write anonymous functions
 var today = function() {
   return new Date();
 }
@@ -12,7 +26,7 @@ console.log(watevs); // NB this tutorial's code did not give the current date on
 
 let todayy = new Date().toISOString().slice(0, 10)
 
-console.log(todayy)
+console.log(todayy) */
 
 /* //preventing object mutation using Object.freeze()
 function freezeObj() {
