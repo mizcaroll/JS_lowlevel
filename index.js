@@ -1,4 +1,18 @@
-//example 2. using destructuting assingnment to assign variables from objects
+//using ES6 destructuring assignment to assign variables from nested objects
+
+const LOCAL_FORECAST = {
+  today: { min: 72, max: 83 },
+  tomorrow: { min: 73.3, max: 84.6 }
+};
+
+function getKeshosMax(forecast) {
+  "use strict";
+  const { tomorrow: { max : maxOfTomorrow }} = forecast; //nested destructuring assignment syntax
+  return maxOfTomorrow;
+}
+console.log(getKeshosMax(LOCAL_FORECAST)); //84.6
+
+/* //example 2. using destructuting assingnment to assign variables from objects
 const  AVG_TEMPS = {
   today: 77.5,
   tomorrow: 79
@@ -9,7 +23,7 @@ function getKeshosTemp(avgTmp) {
   const { tomorrow : tempOfTomorrow } = avgTmp;
   return tempOfTomorrow;
 }
-console.log(getKeshosTemp(AVG_TEMPS));
+console.log(getKeshosTemp(AVG_TEMPS)); //79 */
 
 /* //Destructuring assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object. Consider the following ES5 code:
 
