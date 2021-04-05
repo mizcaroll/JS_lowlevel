@@ -1,6 +1,19 @@
-//Using Destructuring Assignment to Assign Variables from Arrays
+//Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements. NB the rest element only works correctly as the last variable in the list.
 
-const [i,j,] = [1,2,3,4,5,6];
+const source = [1,2,3,4,5,6,7,8,9,10];
+
+function removeFirstTwo(list) {
+ 
+  const [ , , ...arr] = list; 
+  return arr;
+}
+const arr = removeFirstTwo(source);
+console.log(source); //(10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(arr); //(8) [3, 4, 5, 6, 7, 8, 9, 10]
+
+/* //Using Destructuring Assignment to Assign Variables from Arrays
+
+const [i,j] = [1,2,3,4,5,6];
 console.log(i, j); // 1 2
 
 //We can also access the value at any index in an array with destructuring by using commas to reach the desired index:
@@ -16,7 +29,7 @@ let a =8, b = 6;
 [a, b] = [b, a]; 
 }) ();
 console.log(a); //6
-console.log(b); //8
+console.log(b); //8 */
 
 /* //using ES6 destructuring assignment to assign variables from nested objects
 
