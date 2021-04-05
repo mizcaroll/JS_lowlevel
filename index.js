@@ -1,4 +1,24 @@
-//higher order arrow functions
+////Modify the function increment by adding default parameters so that it will add 1 to number if value is not specified.
+
+const increment = (function() {
+return function increment(number, value = 1) {
+  return number + value;
+}
+})();
+console.log(increment(5, 2)); //7
+console.log(increment(5)); //6
+
+//setting default parameters for functions
+
+const greeting = (name = "Anonymous") => "Hello " + name;
+
+console.log(greeting("John")); //Hello John
+console.log(greeting()); //Hello Anonymous
+
+
+/* The default parameter kicks in when the argument is not specified (it is undefined). As in the example above, the parameter name received its default value Anonymous when i didn't provide a value for the parameter. You can add default values for as many parameters as you want. */ 
+
+/* //higher order arrow functions
 //using map() and filter() functions withing an array function
 
 const realNumberArray = [4, 5.6, -.8, 3.14, 42, 6, 8.34, -2];
@@ -9,7 +29,7 @@ const squareList = (arr) => {
 }
 
 const squaredIntegers = squareList(realNumberArray);
-console.log(squaredIntegers); //(3) [16, 1764, 36]
+console.log(squaredIntegers); //(3) [16, 1764, 36] */
 
 /* //arrow functions with parameters
 //the below code can be written as an arrow function
