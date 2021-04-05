@@ -1,4 +1,17 @@
-//Destructuring assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object. Consider the following ES5 code:
+//example 2. using destructuting assingnment to assign variables from objects
+const  AVG_TEMPS = {
+  today: 77.5,
+  tomorrow: 79
+};
+
+function getKeshosTemp(avgTmp) {
+  "use strict";
+  const { tomorrow : tempOfTomorrow } = avgTmp;
+  return tempOfTomorrow;
+}
+console.log(getKeshosTemp(AVG_TEMPS));
+
+/* //Destructuring assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object. Consider the following ES5 code:
 
 const user = { name: 'John Doe', age: 34 };
 
@@ -15,7 +28,7 @@ const {name, age} = user;
 const nextUser = { myName: 'Caroline Mbithe', myAge: 20 };
 
 const { myName : a, myAge : b } = nextUser;
-console.log(a); //Caroline Mbithe
+console.log(a); //Caroline Mbithe */
 
 /* //Use the Spread Operator to Evaluate Arrays In-Place
 //the spread operator as used here spreads out the contents of arr1 into arr2. as opposed to making arr2 equal to arr1.
