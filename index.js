@@ -1,4 +1,23 @@
-//Use the Spread Operator to Evaluate Arrays In-Place
+//Destructuring assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object. Consider the following ES5 code:
+
+const user = { name: 'John Doe', age: 34 };
+
+const name = user.name; //John Doe
+const age = user.age; //34
+
+//Here's an equivalent assignment statement using the ES6 destructuring syntax:
+
+const {name, age} = user;
+
+//Above, the name and age variables will be created and assigned the values of their respective values from the user object. You can see how much cleaner this is. Also note below 
+//using destructuting assingnment to assign variables from objects
+
+const nextUser = { myName: 'Caroline Mbithe', myAge: 20 };
+
+const { myName : a, myAge : b } = nextUser;
+console.log(a); //Caroline Mbithe
+
+/* //Use the Spread Operator to Evaluate Arrays In-Place
 //the spread operator as used here spreads out the contents of arr1 into arr2. as opposed to making arr2 equal to arr1.
 
 const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
@@ -8,7 +27,7 @@ arr2 = [...arr1];  // spread operator
 arr1[0] = 'potato';
 
 console.log(arr2); //(5) ["JAN", "FEB", "MAR", "APR", "MAY"]
-console.log(arr1); //(5) ["potato", "FEB", "MAR", "APR", "MAY"]
+console.log(arr1); //(5) ["potato", "FEB", "MAR", "APR", "MAY"] */
 
 //using rest operator with function parameters
 /*In order to help us create more flexible functions, ES6 introduces the rest parameter for function parameters. With the rest parameter, you can create functions that take a variable number of arguments. These arguments are stored in an array that can be accessed later from inside the function. */
