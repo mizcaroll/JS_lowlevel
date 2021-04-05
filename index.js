@@ -1,4 +1,21 @@
-//Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements. NB the rest element only works correctly as the last variable in the list.
+//Using Destructuring Assignment to Pass an Object as a Function's Parameters
+//challenge: Use destructuring assignment within the argument to the function half to send only max and min inside the function.
+
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+
+const half = ({max, min}) => (max + min) / 2.0; 
+
+console.log(stats);
+console.log(half(stats)); //28.015 success!!
+
+/* //Using Destructuring Assignment with the Rest Parameter to Reassign Array Elements. NB the rest element only works correctly as the last variable in the list.
 
 const source = [1,2,3,4,5,6,7,8,9,10];
 
@@ -9,7 +26,7 @@ function removeFirstTwo(list) {
 }
 const arr = removeFirstTwo(source);
 console.log(source); //(10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-console.log(arr); //(8) [3, 4, 5, 6, 7, 8, 9, 10]
+console.log(arr); //(8) [3, 4, 5, 6, 7, 8, 9, 10] */
 
 /* //Using Destructuring Assignment to Assign Variables from Arrays
 
