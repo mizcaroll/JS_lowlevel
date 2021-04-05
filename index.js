@@ -1,4 +1,24 @@
-//using ES6 destructuring assignment to assign variables from nested objects
+//Using Destructuring Assignment to Assign Variables from Arrays
+
+const [i,j,] = [1,2,3,4,5,6];
+console.log(i, j); // 1 2
+
+//We can also access the value at any index in an array with destructuring by using commas to reach the desired index:
+
+const [x,y,,,,z] = [1,2,3,4,5,6,7,8];
+console.log(x,y,z); //1 2 6
+
+//Using destructuring assignment to swap the values of a and b so that a receives the value stored in b, and b receives the value stored in a.
+
+let a =8, b = 6;
+(() => {
+"use strict";
+[a, b] = [b, a]; 
+}) ();
+console.log(a); //6
+console.log(b); //8
+
+/* //using ES6 destructuring assignment to assign variables from nested objects
 
 const LOCAL_FORECAST = {
   today: { min: 72, max: 83 },
@@ -10,7 +30,7 @@ function getKeshosMax(forecast) {
   const { tomorrow: { max : maxOfTomorrow }} = forecast; //nested destructuring assignment syntax
   return maxOfTomorrow;
 }
-console.log(getKeshosMax(LOCAL_FORECAST)); //84.6
+console.log(getKeshosMax(LOCAL_FORECAST)); //84.6 */
 
 /* //example 2. using destructuting assingnment to assign variables from objects
 const  AVG_TEMPS = {
