@@ -1,7 +1,19 @@
+//Use the Spread Operator to Evaluate Arrays In-Place
+//the spread operator as used here spreads out the contents of arr1 into arr2. as opposed to making arr2 equal to arr1.
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2 = [...arr1];  // spread operator
+arr1[0] = 'potato';
+
+console.log(arr2); //(5) ["JAN", "FEB", "MAR", "APR", "MAY"]
+console.log(arr1); //(5) ["potato", "FEB", "MAR", "APR", "MAY"]
+
 //using rest operator with function parameters
 /*In order to help us create more flexible functions, ES6 introduces the rest parameter for function parameters. With the rest parameter, you can create functions that take a variable number of arguments. These arguments are stored in an array that can be accessed later from inside the function. */
 
-function howMany(...args) {
+/* function howMany(...args) {
   return "You have passed " + args.length + " arguments.";
 }
 console.log(howMany(0, 1, 2)); //You have passed 3 arguments.
@@ -15,7 +27,7 @@ const sum = (function() {
 }) ();
 console.log(sum(1,2,3,4)); //10
 
-// NB. The rest parameter eliminates the need to check the args array and allows us to apply map(), filter() and reduce() on the parameters array.
+// NB. The rest parameter eliminates the need to check the args array and allows us to apply map(), filter() and reduce() on the parameters array. */
 
 /* //Modify the function increment by adding default parameters so that it will add 1 to number if value is not specified.
 
