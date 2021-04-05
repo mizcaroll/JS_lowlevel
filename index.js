@@ -1,4 +1,23 @@
-////Modify the function increment by adding default parameters so that it will add 1 to number if value is not specified.
+//using rest operator with function parameters
+/*In order to help us create more flexible functions, ES6 introduces the rest parameter for function parameters. With the rest parameter, you can create functions that take a variable number of arguments. These arguments are stored in an array that can be accessed later from inside the function. */
+
+function howMany(...args) {
+  return "You have passed " + args.length + " arguments.";
+}
+console.log(howMany(0, 1, 2)); //You have passed 3 arguments.
+console.log(howMany("string", null, [1, 2, 3], { })); //You have passed 4 arguments.
+
+//ex 2. using rest operator with function parameters
+const sum = (function() {
+  return function sum(...args) {
+    return args.reduce((a, b) => a + b, 0);
+  };
+}) ();
+console.log(sum(1,2,3,4)); //10
+
+// NB. The rest parameter eliminates the need to check the args array and allows us to apply map(), filter() and reduce() on the parameters array.
+
+/* //Modify the function increment by adding default parameters so that it will add 1 to number if value is not specified.
 
 const increment = (function() {
 return function increment(number, value = 1) {
@@ -13,8 +32,7 @@ console.log(increment(5)); //6
 const greeting = (name = "Anonymous") => "Hello " + name;
 
 console.log(greeting("John")); //Hello John
-console.log(greeting()); //Hello Anonymous
-
+console.log(greeting()); //Hello Anonymous */
 
 /* The default parameter kicks in when the argument is not specified (it is undefined). As in the example above, the parameter name received its default value Anonymous when i didn't provide a value for the parameter. You can add default values for as many parameters as you want. */ 
 
