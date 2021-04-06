@@ -15,9 +15,11 @@ const result = {
   failure: ["no-var", "var-on-top", "linebreak"],
   skipped: ["no-extra-semi", "no-dup-keys"]
 };
-const failureItems = []; //i should put this within the function but when i do it throws an error. ???
+
 
 function makeList(arr) {
+
+  const failureItems = []; 
 
   for ( let i = 0; i < arr.length; i++ )  {
     failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
@@ -25,7 +27,7 @@ function makeList(arr) {
   return failureItems;
 }
 
-const failuresList = makeList(result.failure);
+const failureItems = makeList(result.failure);
 console.log(failureItems); //success!!
 
 
