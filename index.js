@@ -1,5 +1,36 @@
 //creating strings using template literals. We do this using backticks.
-//Pros: You can make multi-line strings. You can add single or double quotes withing your string without having to escape them. You can put variables within the string.
+//challenge: Use template literal syntax with backticks to create an array of list element (li) strings. Each list element's text should be one of the array elements from the failure property on the result object and have a class attribute with the value text-warning. The makeList function should return the array of list item strings.
+
+/* Use an iterator method (any kind of loop) to get the desired output (shown below).
+
+[
+  '<li class="text-warning">no-var</li>',
+  '<li class="text-warning">var-on-top</li>',
+  '<li class="text-warning">linebreak</li>'
+]
+ */
+
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+const failureItems = []; //i should put this within the function but when i do it throws an error. ???
+
+function makeList(arr) {
+
+  for ( let i = 0; i < arr.length; i++ )  {
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
+  }
+  return failureItems;
+}
+
+const failuresList = makeList(result.failure);
+console.log(failureItems); //success!!
+
+
+/* //creating strings using template literals. We do this using backticks.
+//Pros: You can make multi-line strings. You can add single or double quotes withing your string without having to escape them. You can put variables within the string using the ${variable} placeholder.
 
 const person = {
   name: "Vanessa Taylor",
@@ -10,7 +41,7 @@ const person = {
 const greeting = `Hello, my name is ${person.name}!
 I am ${person.age} years old`;
 
-console.log(greeting); /* Hello, my name is Vanessa Taylor!
+console.log(greeting); */ /* Hello, my name is Vanessa Taylor!
 I am 33 years old */
 
 /* //Using Destructuring Assignment to Pass an Object as a Function's Parameters
