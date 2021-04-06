@@ -1,4 +1,19 @@
-//Using Destructuring Assignment to Pass an Object as a Function's Parameters
+//creating strings using template literals. We do this using backticks.
+//Pros: You can make multi-line strings. You can add single or double quotes withing your string without having to escape them. You can put variables within the string.
+
+const person = {
+  name: "Vanessa Taylor",
+  age: 33
+};
+
+//Template literal with multi-line string interpolation
+const greeting = `Hello, my name is ${person.name}!
+I am ${person.age} years old`;
+
+console.log(greeting); /* Hello, my name is Vanessa Taylor!
+I am 33 years old */
+
+/* //Using Destructuring Assignment to Pass an Object as a Function's Parameters
 //challenge: Use destructuring assignment within the argument to the function half to send only max and min inside the function.
 
 const stats = {
@@ -13,7 +28,7 @@ const stats = {
 const half = ({max, min}) => (max + min) / 2.0; 
 
 console.log(stats);
-console.log(half(stats)); //28.015 success!!
+console.log(half(stats)); //28.015 success!! */
 
 /* //Using Destructuring Assignment with the Rest Parameter to Reassign Array Elements. NB the rest element only works correctly as the last variable in the list.
 
