@@ -1,4 +1,11 @@
-//Write Concise Object Literal Declarations Using Object Property Shorthand
+//Concise Object Literal Declarations Using Object Property Shorthand - Challenge:
+
+const createPerson = (name, age, gender) => ({name, age, gender});
+console.log(createPerson("Zodiac Hasbro", 56, "male"));
+
+//{name: "Zodiac Hasbro", age: 56, gender: "male"} success!
+
+/* //Write Concise Object Literal Declarations Using Object Property Shorthand
 //e.g. the following function passes 2 arguments and returns an object
 const getPosition = (x, y) => ({
   x: x,
@@ -7,7 +14,7 @@ const getPosition = (x, y) => ({
 
 //with ES6 can simply be written as..
 
-const getPosition = (x, y) => ({x, y});
+const getPosition = (x, y) => ({x, y}); */
 
 //creating strings using template literals. We do this using backticks.
 //challenge: Use template literal syntax with backticks to create an array of list element (li) strings. Each list element's text should be one of the array elements from the failure property on the result object and have a class attribute with the value text-warning. The makeList function should return the array of list item strings.
