@@ -1,7 +1,25 @@
-//Concise Object Literal Declarations Using Object Property Shorthand - Challenge:
+//write concise declarative functions. When defining functions within objects in ES5, we have to use the keyword function as follows:
+
+const person = {
+  name: "Taylor",
+  sayHello: function() {
+    return `Hello! My name is ${this.name}.`;
+  }
+};
+
+//With ES6, you can remove the function keyword and colon altogether when defining functions in objects. Here's an example of this syntax:
+
+const person = {
+  name: "Taylor",
+  sayHello() {
+    return `Hello! My name is ${this.name}.`;
+  }
+};
+
+/* //Concise Object Literal Declarations Using Object Property Shorthand - Challenge:
 
 const createPerson = (name, age, gender) => ({name, age, gender});
-console.log(createPerson("Zodiac Hasbro", 56, "male"));
+console.log(createPerson("Zodiac Hasbro", 56, "male")); */
 
 //{name: "Zodiac Hasbro", age: 56, gender: "male"} success!
 
@@ -45,8 +63,9 @@ function makeList(arr) {
   return failureItems;
 }
 
-const failureItems = makeList(result.failure);
-console.log(failureItems); //success!! */
+const failuresList = makeList(result.failure);
+console.log(failuresList); //success!!
+//console.log(makeList(result.failure)); */
 
 
 /* //creating strings using template literals. We do this using backticks.
