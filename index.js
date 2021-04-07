@@ -1,4 +1,16 @@
-//write concise declarative functions. When defining functions within objects in ES5, we have to use the keyword function as follows:
+//concise declarative functions challenge: Refactor the function setGear inside the object bicycle. setGear should be a declarative function. bicycle.setGear(48) should change the gear value to 48.
+
+const bicycle = {
+  gear : 2,
+  setGear(newGear) {
+    "use strict";
+    this.gear = newGear;
+  }
+}
+bicycle.setGear(48);
+console.log(bicycle.gear); //success!
+
+/* //write concise declarative functions. When defining functions within objects in ES5, we have to use the keyword function as follows:
 
 const person = {
   name: "Taylor",
@@ -15,7 +27,7 @@ const person = {
     return `Hello! My name is ${this.name}.`;
   }
 };
-
+ */
 /* //Concise Object Literal Declarations Using Object Property Shorthand - Challenge:
 
 const createPerson = (name, age, gender) => ({name, age, gender});
