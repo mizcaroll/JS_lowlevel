@@ -1,4 +1,37 @@
-//concise declarative functions challenge: Refactor the function setGear inside the object bicycle. setGear should be a declarative function. bicycle.setGear(48) should change the gear value to 48.
+//Use class Syntax to Define a Constructor Function challenge:
+/* Use the class keyword and write a constructor to create the Vegetable class. The Vegetable class allows you to create a vegetable object with a property name that gets passed to the constructor. Vegetable should be a class with a defined constructor method. The class keyword should be used. Vegetable should be able to be instantiated. carrot.name should return carrot. */
+
+class  Vegetable {
+  constructor(name) {
+    this.name = name;
+  }
+}
+const carrot = new Vegetable("carrot");
+console.log(carrot.name); //carrot 
+
+//Use class Syntax to Define a Constructor Function
+//ES6 provides a new syntax to create objects, using the class keyword. It should be noted that the class syntax is just syntax, and not a full-fledged class-based implementation of an object-oriented paradigm, unlike in languages such as Java, Python, Ruby, etc.
+
+/* //In ES5, we usually define a constructor function and use the new keyword to instantiate an object.
+
+var SpaceShuttle = function(targetPlanet){
+  this.targetPlanet = targetPlanet;
+}
+var zeus = new SpaceShuttle('Jupiter');
+
+//in ES6 The class syntax simply replaces the constructor function creation:
+
+class SpaceShuttle {
+  constructor(targetPlanet) {
+    this.targetPlanet = targetPlanet;
+  }
+}
+const zeus = new SpaceShuttle('Jupiter'); */
+
+//It should be noted that the class keyword declares a new function, to which a constructor is added. This constructor is invoked when new is called to create a new object.
+//NB: UpperCamelCase should be used by convention for ES6 class names, as in SpaceShuttle used above.
+
+/* //concise declarative functions challenge: Refactor the function setGear inside the object bicycle. setGear should be a declarative function. bicycle.setGear(48) should change the gear value to 48.
 
 const bicycle = {
   gear : 2,
@@ -8,7 +41,7 @@ const bicycle = {
   }
 }
 bicycle.setGear(48);
-console.log(bicycle.gear); //success!
+console.log(bicycle.gear); //success! */
 
 /* //write concise declarative functions. When defining functions within objects in ES5, we have to use the keyword function as follows:
 
