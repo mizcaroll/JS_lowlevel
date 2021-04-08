@@ -1,9 +1,17 @@
-//import export exercise. 
+//using * to export everything from a file
+
+//use export to reuse a code block
+// syntax to export variables:
+
+export const foo = "bar";
+export const bar = "foo";
+
+/* //export & import a function. exercise: 
 
 import { capitalizeString } from "./string_function.js"
 const cap = capitalizeString("hello!");
-console.log(cap);
-
+console.log(cap); //HELLO!
+ */
 /* //importing and exporting functions in javascript
 //Imagine a file called math_functions.js that contains several functions related to mathematical operations. One of them is stored in a variable, add, that takes in two numbers and returns their sum. You want to use this function in several different JavaScript files. In order to share it with these other files, you first need to export it.
 
