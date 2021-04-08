@@ -1,7 +1,33 @@
+// Use getters and setters to Control Access to an Object
+//You can obtain values from an object and set the value of a property within an object. Getter functions are meant to simply return (get) the value of an object's private variable to the user without the user directly accessing the private variable.
+//Setter functions are meant to modify (set) the value of an object's private variable based on the value passed into the setter function. This change could involve calculations, or even overwriting the previous value completely.
+
+class Book {
+  constructor(author) {
+    this._author = author;
+  }
+  // getter
+  get writer() {
+    return this._author;
+  }
+  // setter
+  set writer(updatedAuthor) {
+    this._author = updatedAuthor;
+  }
+}
+const novel = new Book('anonymous');
+console.log(novel.writer); //anonymous
+novel.writer = 'newAuthor'; 
+console.log(novel.writer);//newAuthor
+
+//Note the syntax used to invoke the getter and setter. They do not even look like functions. Getters and setters are important because they hide internal implementation details.
+
+//NB: It is convention to precede the name of a private variable with an underscore (_). However, the practice itself does not make a variable private.
+
 //Use class Syntax to Define a Constructor Function challenge:
 /* Use the class keyword and write a constructor to create the Vegetable class. The Vegetable class allows you to create a vegetable object with a property name that gets passed to the constructor. Vegetable should be a class with a defined constructor method. The class keyword should be used. Vegetable should be able to be instantiated. carrot.name should return carrot. */
 
-class  Vegetable {
+/* class  Vegetable {
   constructor(name) {
     this.name = name;
   }
@@ -10,7 +36,7 @@ const carrot = new Vegetable("carrot");
 console.log(carrot.name); //carrot 
 
 //Use class Syntax to Define a Constructor Function
-//ES6 provides a new syntax to create objects, using the class keyword. It should be noted that the class syntax is just syntax, and not a full-fledged class-based implementation of an object-oriented paradigm, unlike in languages such as Java, Python, Ruby, etc.
+//ES6 provides a new syntax to create objects, using the class keyword. It should be noted that the class syntax is just syntax, and not a full-fledged class-based implementation of an object-oriented paradigm, unlike in languages such as Java, Python, Ruby, etc. */
 
 /* //In ES5, we usually define a constructor function and use the new keyword to instantiate an object.
 
