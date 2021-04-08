@@ -1,4 +1,26 @@
-// Use getters and setters to Control Access to an Object
+//getters and setters challenge:
+
+class Thermostat {
+  constructor(temp) {
+    this._temp = 5/9 * (temp - 32);
+  }
+get temperature() {
+  return this._temp;
+}
+set temperature(newTemp) {
+  this._temp = newTemp;
+}
+}
+const thermos = new Thermostat(76);
+//get
+console.log(thermos.temperature); //24.444444444444446
+
+//set
+thermos.temperature = 48;
+temp = thermos.temperature;
+console.log(temp); //48
+
+/* // Use getters and setters to Control Access to an Object
 //You can obtain values from an object and set the value of a property within an object. Getter functions are meant to simply return (get) the value of an object's private variable to the user without the user directly accessing the private variable.
 //Setter functions are meant to modify (set) the value of an object's private variable based on the value passed into the setter function. This change could involve calculations, or even overwriting the previous value completely.
 
@@ -22,7 +44,7 @@ console.log(novel.writer);//newAuthor
 
 //Note the syntax used to invoke the getter and setter. They do not even look like functions. Getters and setters are important because they hide internal implementation details.
 
-//NB: It is convention to precede the name of a private variable with an underscore (_). However, the practice itself does not make a variable private.
+//NB: It is convention to precede the name of a private variable with an underscore (_). However, the practice itself does not make a variable private. */
 
 //Use class Syntax to Define a Constructor Function challenge:
 /* Use the class keyword and write a constructor to create the Vegetable class. The Vegetable class allows you to create a vegetable object with a property name that gets passed to the constructor. Vegetable should be a class with a defined constructor method. The class keyword should be used. Vegetable should be able to be instantiated. carrot.name should return carrot. */
