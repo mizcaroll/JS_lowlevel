@@ -1,10 +1,17 @@
-//using * to export everything from a file
+//create an export fallback with an  export default
 
-//use export to reuse a code block
+//using * to export everything from a file. You have to create an object to store everything in. e.g a new object called capitalizeString in this example
+
+//syntax:
+import * as newObject from "./filename.js"
+import * as capitalizeString from "./string_function.js"
+
+
+/* //use export to reuse a code block
 // syntax to export variables:
 
 export const foo = "bar";
-export const bar = "foo";
+export const bar = "foo"; */
 
 /* //export & import a function. exercise: 
 
