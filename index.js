@@ -1,4 +1,12 @@
-//using 'some' write a function that checks an array for a 'falsey' value. e.g. checkForFalsey([11, NaN, [], 'Angels']) => true;
+//using the 'reduce' js method, write a function that will return the total number of characters in an array of strings. e.g. getTotal(['Rabbit', 'Footbal', 'Cracking']) => 22
+
+const Array = ['John', 'Doe', 'is', 'American'];
+function getTotal(arr) {
+  return arr.reduce((total, value) => total + value.length, 0);
+}
+console.log(getTotal(Array));
+
+/* //using 'some' write a function that checks an array for a 'falsey' value. e.g. checkForFalsey([11, NaN, [], 'Angels']) => true;
 
 const randomArr = [ 45, 'Mary', 10, 'Tom'];
 
@@ -7,7 +15,7 @@ function checkForFalsy(arr) {
 }
 
 console.log(checkForFalsy(randomArr));
-
+ */
 /* //the 7 falsey values evaluated with the ternary operator
 console.log("The 7 falsy values")
 0 ? console.log("truthy") : console.log("falsy") // falsy
