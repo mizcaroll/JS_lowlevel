@@ -1,4 +1,14 @@
-//the 7 falsey values evaluated with the ternary operator
+//using 'some' write a function that checks an array for a 'falsey' value. e.g. checkForFalsey([11, NaN, [], 'Angels']) => true;
+
+const randomArr = [ 45, 'Mary', 10, 'Tom'];
+
+function checkForFalsy(arr) {
+  return arr.some(i => !i); //true
+}
+
+console.log(checkForFalsy(randomArr));
+
+/* //the 7 falsey values evaluated with the ternary operator
 console.log("The 7 falsy values")
 0 ? console.log("truthy") : console.log("falsy") // falsy
 0n ? console.log("truthy") : console.log("falsy") // falsy
@@ -6,7 +16,7 @@ null ? console.log("truthy") : console.log("falsy") // falsy
 undefined ? console.log("truthy") : console.log("falsy") // falsy
 false ? console.log("truthy") : console.log("falsy") // falsy
 NaN ? console.log("truthy") : console.log("falsy") // falsy
-"" ? console.log("truthy") : console.log("falsy") // falsy
+"" ? console.log("truthy") : console.log("falsy") // falsy */
 
 /* //Array execrcise. using 'map' js method, write a function that converts farenheit to celcius. e.g: getCelcius([23, 140, 212, 41]) => [-5, 60, 100, 5]
 
