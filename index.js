@@ -1,5 +1,14 @@
-//importing a defualt export
-//To import a default export, you need to use a different import syntax. In the following example, add is the default export of the math_functions.js file. Here is how to import it:
+//Array execrcise. using 'map' js method, write a function that converts farenheit to celcius. e.g: getCelcius([23, 148, 212, 41]) => [-5, 60, 100, 5]
+
+function solution(temp) {
+return temp.map(i => 5/9 * (i - 32));
+}
+
+const temperature = [23, 148, 212, 41];
+console.log(solution(temperature)); //[-5, 64.44444444444444, 100, 5] success!
+
+/* //importing a defualt export
+//To import a default export, you need to use a different import synta x. In the following example, add is the default export of the math_functions.js file. Here is how to import it:
 
 import add from "./math_functions.js";
 
@@ -28,7 +37,7 @@ export default function(x, y) {
 //syntax:
 import * as newObject from "./filename.js"
 import * as capitalizeString from "./string_function.js"
-
+ */
 
 /* //use export to reuse a code block
 // syntax to export variables:
