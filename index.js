@@ -1,11 +1,39 @@
-//using an array method, write a function that converts an array of cm values as strings, into an array of numbers. e.g getValues(['23cm', 5.6cm', 1000mc']) => [23, 5.6, 1000]
+//using 'split' and 'filter' write a function that counts the number of vowels in a sentence. e.g: getVowelCount("I was born and raised in Nairobi Kenya.") => 12
+
+/* function numberOfVowels(sentence) {
+  const letters = sentence.split('');
+  const vowels = letters.filter(i => i === 'a' || i === 'e' || i === 'i' || i === 'o' || i === 'u' );
+  return vowels.length;
+}
+
+const testSentence = "I was born and raised in Nairobi Kenya.";
+console.log(numberOfVowels(testSentence)); */
+
+//NB: i completed this challenge thought my solution was genius and worked brilliantly..
+//until i eventually saw the tutor's solution wow. nisawa tu btw lol.
+//my takeaway is that single lines of code are cleaner 
+//therefore more brilliant and efficient.
+//i hadn't yet learnt about includes() method to be fair.
+//cleaner solution below:
+
+const testSentence = "I was born and raised in Nairobi Kenya.";
+const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+
+function getVowelCount(sentence) {
+  return testSentence.split('').filter(i => vowels.includes(i)).length;
+}
+
+console.log(getVowelCount(testSentence));
+
+
+/* //using an array method, write a function that converts an array of cm values as strings, into an array of numbers. e.g getValues(['23cm', 5.6cm', 1000mc']) => [23, 5.6, 1000]
 
 function toInt(arr) {
 return arr.map(i => parseFloat(i, 10)); 
 }
 
 const testArr = ['23cm', '5.6cm', '1000cm'];
-console.log(toInt(testArr)); //[23, 5.6, 1000] success!!
+console.log(toInt(testArr)); //[23, 5.6, 1000] success!! */
 
 /* //using an array method, write a function that returns the string elements of an array that have a given length or larger. e.g. getWords(['Florida', 'Dog', 'Phone'])
 
