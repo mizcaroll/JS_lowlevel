@@ -1,11 +1,20 @@
-//using 'every' write a function that checks whether evry number in an array is a square number. e.g. checkSquares([9, 16, 81] => true)
+//using an array method, write a function that returns the string elements of an array that have a given length or larger. e.g. getWords(['Florida', 'Dog', 'Phone'])
+
+function checkLength(arr, num) {
+  return arr.filter(word => word.length >= num);
+}
+
+const testArr = ['Florida', 'Dog', 'Phone'];
+console.log(checkLength(testArr, 4)); // (2) ["Florida", "Phone"] success!
+
+/* //using 'every' write a function that checks whether evry number in an array is a square number. e.g. checkSquares([9, 16, 81] => true)
 
 function checkSquares(arr) {
 return arr.every(i => (Math.sqrt(i) % 1 === 0));
 }
 
 const testArr = [9, 16, 81];
-console.log(checkSquares(testArr)); //true
+console.log(checkSquares(testArr)); //true */
 
 /* //using the 'reduce' js method, write a function that will return the total number of characters in an array of strings. e.g. getTotal(['Rabbit', 'Footbal', 'Cracking']) => 22
 
