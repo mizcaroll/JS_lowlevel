@@ -1,11 +1,20 @@
-//using an array method, write a function that returns the string elements of an array that have a given length or larger. e.g. getWords(['Florida', 'Dog', 'Phone'])
+//using an array method, write a function that converts an array of cm values as strings, into an array of numbers. e.g getValues(['23cm', 5.6cm', 1000mc']) => [23, 5.6, 1000]
+
+function toInt(arr) {
+return arr.map(i => parseFloat(i, 10)); 
+}
+
+const testArr = ['23cm', '5.6cm', '1000cm'];
+console.log(toInt(testArr)); //[23, 5.6, 1000] success!!
+
+/* //using an array method, write a function that returns the string elements of an array that have a given length or larger. e.g. getWords(['Florida', 'Dog', 'Phone'])
 
 function checkLength(arr, num) {
-  return arr.filter(word => word.length >= num);
+  return arr.filter(i => i.length >= num);
 }
 
 const testArr = ['Florida', 'Dog', 'Phone'];
-console.log(checkLength(testArr, 4)); // (2) ["Florida", "Phone"] success!
+console.log(checkLength(testArr, 4)); // (2) ["Florida", "Phone"] success! */
 
 /* //using 'every' write a function that checks whether evry number in an array is a square number. e.g. checkSquares([9, 16, 81] => true)
 
