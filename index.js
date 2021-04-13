@@ -1,14 +1,23 @@
-//using the 'reduce' js method, write a function that will return the total number of characters in an array of strings. e.g. getTotal(['Rabbit', 'Footbal', 'Cracking']) => 22
+//using 'every' write a function that checks whether evry number in an array is a square number. e.g. checkSquares([9, 16, 81] => true)
+
+function checkSquares(arr) {
+return arr.every(i => (Math.sqrt(i) % 1 === 0));
+}
+
+const testArr = [9, 16, 81];
+console.log(checkSquares(testArr)); //true
+
+/* //using the 'reduce' js method, write a function that will return the total number of characters in an array of strings. e.g. getTotal(['Rabbit', 'Footbal', 'Cracking']) => 22
 
 const Array = ['John', 'Doe', 'is', 'American'];
 function getTotal(arr) {
   return arr.reduce((total, value) => total + value.length, 0);
 }
-console.log(getTotal(Array));
+console.log(getTotal(Array)); //success! */
 
 /* //using 'some' write a function that checks an array for a 'falsey' value. e.g. checkForFalsey([11, NaN, [], 'Angels']) => true;
 
-const randomArr = [ 45, 'Mary', 10, 'Tom'];
+const randomArr = [ 45, 'Mary', 0, 'Tom'];
 
 function checkForFalsy(arr) {
   return arr.some(i => !i); //true
@@ -36,7 +45,7 @@ const temperature = [23, 140, 212, 41];
 console.log(solution(temperature)); //[-5, 60, 100, 5] success!
  */
 /* //importing a defualt export
-//To import a default export, you need to use a different import synta x. In the following example, add is the default export of the math_functions.js file. Here is how to import it:
+//To import a default export, you need to use a different import syntax. In the following example, add is the default export of the math_functions.js file. Here is how to import it:
 
 import add from "./math_functions.js";
 
