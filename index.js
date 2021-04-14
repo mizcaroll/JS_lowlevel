@@ -1,3 +1,18 @@
+//using 'split' 'map' and 'join' write a function that capitalises the first letter of each word in a sentence. e.g capitalise('nairobi half life') => 'Nairobi Half Life'
+
+//my solution
+
+const testSentence = 'i learnt about includes method yesterday.';
+
+function capitalise(sentence) {
+return sentence.split(' ').map(i => i[0].toUpperCase() + i.substr(1)).join(' ');
+}
+
+console.log(capitalise(testSentence)); //I Learnt About Includes Method Yesterday. 
+
+//tutor's solution - uses charAt(), therefore dot notation throughout.
+//sentence.split(' ').map(i => i.charAt(0).toUpperCase + i.substr(1)).join(' ');
+
 //using 'split' and 'filter' write a function that counts the number of vowels in a sentence. e.g: getVowelCount("I was born and raised in Nairobi Kenya.") => 12
 
 /* function numberOfVowels(sentence) {
@@ -16,14 +31,14 @@ console.log(numberOfVowels(testSentence)); */
 //i hadn't yet learnt about includes() method to be fair.
 //cleaner solution below:
 
-const testSentence = "I was born and raised in Nairobi Kenya.";
+/* const testSentence = "I was born and raised in Nairobi Kenya.";
 const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 
 function getVowelCount(sentence) {
   return testSentence.split('').filter(i => vowels.includes(i)).length;
 }
 
-console.log(getVowelCount(testSentence));
+console.log(getVowelCount(testSentence)); //14 success!! */
 
 
 /* //using an array method, write a function that converts an array of cm values as strings, into an array of numbers. e.g getValues(['23cm', 5.6cm', 1000mc']) => [23, 5.6, 1000]
