@@ -1,6 +1,26 @@
-//.addEventListener()
+
+//Challenge: You're at a bar with a friend. When you ask them what they'd like to drink, they say 'surprise me'. create a function that picks a random drink from the drinks menu.
+
+const drinksMenu = ['Vodka Tonic', 'White Wine', 'Beer', 'Mocktail'];
+
+function randomDrink(arr) {
+return arr[Math.floor(Math.random() * arr.length)];
+}
+
+console.log(randomDrink(drinksMenu)); //success!
+
+
+//Math.random() - returns a random number from 0 to less than 1.
+//Math.floor() - rounds numbers down to the nearest full integer
+//Math.ceil() - rounds numbers up to the nearest full integer
+//Math.round() - rounds to the nearest integer
+
+
+//also research .removeEventListener()
+
+/* //.addEventListener()
 //syntax: target.addEventLisetener(event, function)
-//write code that would log something on the console when someone clicked on the html body element.
+//write code that would log something on the console when someone clicks on the html body element.
 
 const body = document.querySelector('body');
 
@@ -8,7 +28,7 @@ function bodyReact() {
 console.log("Someone has clicked inside your web page.");
 }
 
-body.addEventListener('click', bodyReact());
+body.addEventListener('click', bodyReact()); */
 
 
 /* //using 'split' 'map' and 'join' write a function that capitalises the first letter of each word in a sentence. e.g capitalise('nairobi half life') => 'Nairobi Half Life'
