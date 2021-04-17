@@ -1,4 +1,17 @@
-//using 'split' 'map' and 'join' write a function that capitalises the first letter of each word in a sentence. e.g capitalise('nairobi half life') => 'Nairobi Half Life'
+//.addEventListener()
+//syntax: target.addEventLisetener(event, function)
+//write code that would log something on the console when someone clicked on the html body element.
+
+const body = document.querySelector('body');
+
+function bodyReact() {
+console.log("Someone has clicked inside your web page.");
+}
+
+body.addEventListener('click', bodyReact());
+
+
+/* //using 'split' 'map' and 'join' write a function that capitalises the first letter of each word in a sentence. e.g capitalise('nairobi half life') => 'Nairobi Half Life'
 
 //my solution
 
@@ -11,7 +24,7 @@ return sentence.split(' ').map(i => i[0].toUpperCase() + i.substr(1)).join(' ');
 console.log(capitalise(testSentence)); //I Learnt About Includes Method Yesterday. 
 
 //tutor's solution - uses charAt(), therefore dot notation throughout.
-//sentence.split(' ').map(i => i.charAt(0).toUpperCase + i.substr(1)).join(' ');
+//sentence.split(' ').map(i => i.charAt(0).toUpperCase + i.substr(1)).join(' '); */
 
 //using 'split' and 'filter' write a function that counts the number of vowels in a sentence. e.g: getVowelCount("I was born and raised in Nairobi Kenya.") => 12
 
