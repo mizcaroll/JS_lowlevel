@@ -1,5 +1,30 @@
+//use the date method to create a countdown to next Christmas
+//Date()
+const today = new Date()
+const Christmas = new Date('2021-12-24T11:50:08.331Z')
+const millisecondsToXmas = Christmas - today // 18929934139
+const minutes = millisecondsToXmas / 60000;
+console.log(minutes) //315498.3785666667
+console.log(Math.round(minutes)) //315498
 
-//Challenge: You're at a bar with a friend. When you ask them what they'd like to drink, they say 'surprise me'. create a function that picks a random drink from the drinks menu.
+
+//Syntax for date;
+const date = today.getDate() // 19. i.e 19th day of the month.
+
+//Syntax for Day;
+const day = today.getDay() // 3. i.e the 3rd day of the week.
+
+//Syntax for fullYear;
+const fullYear = today.getFullYear() // 2021. i.e current year.
+
+//Syntax for hours;
+const hours = today.getHours() // 11. i.e time now is 11:37 in 24hour system.
+
+//Syntax for IsoString;
+const isoString = today.toISOString() // 2021-05-19T11:50:08.331Z i.e. (11:50am) in standardized date format
+//console.log(isoString)
+
+/* //Challenge: You're at a bar with a friend. When you ask them what they'd like to drink, they say 'surprise me'. create a function that picks a random drink from the drinks menu.
 
 const drinksMenu = ['Vodka Tonic', 'White Wine', 'Beer', 'Mocktail'];
 
@@ -7,9 +32,9 @@ function randomDrink(arr) {
 return arr[Math.floor(Math.random() * arr.length)];
 }
 
-console.log(randomDrink(drinksMenu)); //success!
+console.log(randomDrink(drinksMenu)); //success! */
 
-
+//JS inbuilt Math objects
 //Math.random() - returns a random number from 0 to less than 1.
 //Math.floor() - rounds numbers down to the nearest full integer
 //Math.ceil() - rounds numbers up to the nearest full integer
