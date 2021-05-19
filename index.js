@@ -1,4 +1,11 @@
-//use the date method to create a countdown to next Christmas
+//.sort() sorts the elements of an array in place and returns a sorted array. Default order is ascending(alphabetical).
+const planets = ['Mars', 'Jupiter', 'Earth', 'Pluto'];
+console.log(planets.sort()); //["Earth", "Jupiter", "Mars", "Pluto"]
+
+const ages = [45, 108, 6, 12, 70, 26, 2];
+console.log(ages.sort((a, b) => a - b)); //[2, 6, 12, 26, 45, 70, 108]
+
+/* //use the date method to create a countdown to next Christmas
 //Date()
 const today = new Date()
 const Christmas = new Date('2021-12-24T11:50:08.331Z')
@@ -22,7 +29,7 @@ const hours = today.getHours() // 11. i.e time now is 11:37 in 24hour system.
 
 //Syntax for IsoString;
 const isoString = today.toISOString() // 2021-05-19T11:50:08.331Z i.e. (11:50am) in standardized date format
-//console.log(isoString)
+//console.log(isoString) */
 
 /* //Challenge: You're at a bar with a friend. When you ask them what they'd like to drink, they say 'surprise me'. create a function that picks a random drink from the drinks menu.
 
