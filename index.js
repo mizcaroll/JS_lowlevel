@@ -1,9 +1,20 @@
-//.sort() sorts the elements of an array in place and returns a sorted array. Default order is ascending(alphabetical).
+//.includes() determines whether an array includes a certain value in its entries. Returns a boolean value true or false.
+const books = ['Alf', 'Power of now', 'Think Big', 'Alchemist'];
+const isInBooks = books.includes('Alf');
+console.log(isInBooks) //true
+
+//.contains() CANNOT be used with arrays. can be used to find out whether a node has a child with a specific class. e.g.
+const body = document.querySelector('body');
+const circle = document.querySelector('.circle');
+console.log(body.contains(circle)) //false
+
+
+/* //.sort() sorts the elements of an array in place and returns a sorted array. Default order is ascending(alphabetical).
 const planets = ['Mars', 'Jupiter', 'Earth', 'Pluto'];
 console.log(planets.sort()); //["Earth", "Jupiter", "Mars", "Pluto"]
 
 const ages = [45, 108, 6, 12, 70, 26, 2];
-console.log(ages.sort((a, b) => a - b)); //[2, 6, 12, 26, 45, 70, 108]
+console.log(ages.sort((a, b) => a - b)); //[2, 6, 12, 26, 45, 70, 108] */
 
 /* //use the date method to create a countdown to next Christmas
 //Date()
